@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Obtener el ID del equipo desde la URL
-    let params = new URLSearchParams(window.location.search);
-    let id = params.get("id");
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
 
     if (id) {
-        // Hacer la solicitud al servidor para obtener los detalles del equipo
+        // Cargar los detalles del equipo
         fetch(`http://localhost:3000/equipo/${id}`)
             .then(response => {
                 if (!response.ok) {
@@ -12,11 +12,39 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 return response.json();
             })
-            .then(data => mostrarDetalles(data))
+            .then(equipo => mostrarDetalles(equipo))
             .catch(error => {
                 console.error("Error:", error);
-                alert(error.message); // Mostrar un mensaje de error al usuario
+                alert(error.message);
             });
+
+        // Manejar el botón de editar
+        document.getElementById("btnEditar").addEventListener("click", () => {
+            window.location.href = `editar.html?id=${id}`;
+        });
+
+        // Manejar el botón de eliminar
+        document.getElementById("btnEliminar").addEventListener("click", () => {
+            if (confirm("¿Estás seguro de que quieres eliminar este equipo?")) {
+                fetch(`http://localhost:3000/equipo/${id}`, {
+                    method: "DELETE",
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error("Error al eliminar el equipo");
+                        }
+                        return response.json();
+                    })
+                    .then(() => {
+                        alert("Equipo eliminado correctamente");
+                        window.location.href = "index.html"; // Redirigir a la página principal
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                        alert(error.message);
+                    });
+            }
+        });
     } else {
         alert("ID del equipo no proporcionado");
     }
