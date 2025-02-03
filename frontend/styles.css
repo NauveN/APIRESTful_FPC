@@ -1,0 +1,43 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+h1 {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #343a40;
+    color: white;
+}
+
+.form-control, .btn {
+    border-radius: 8px;
+}
+
+.card {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.team-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
