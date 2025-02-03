@@ -1,0 +1,34 @@
+[
+  {
+      "nombre": "Atlético Nacional",
+      "ciudad": "Medellín",
+      "categoria": "Primera División",
+      "titulos": 17,
+      "estadio": "Atanasio Girardot",
+      "fundacion": "1947"
+  },
+  {
+      "nombre": "Millonarios",
+      "ciudad": "Bogotá",
+      "categoria": "Primera División",
+      "titulos": 16,
+      "estadio": "El Campín",
+      "fundacion": "1946"
+  },
+  {
+      "nombre": "América de Cali",
+      "ciudad": "Cali",
+      "categoria": "Primera División",
+      "titulos": 15,
+      "estadio": "Pascual Guerrero",
+      "fundacion": "1927"
+  },
+  {
+      "nombre": "Unión Magdalena",
+      "ciudad": "Santa Marta",
+      "categoria": "Segunda División",
+      "titulos": 1,
+      "estadio": "Sierra Nevada",
+      "fundacion": "1953"
+  }
+]
