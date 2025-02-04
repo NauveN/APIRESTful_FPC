@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Obtener el ID del equipo desde la URL
+    // Obtener el ID del equipo
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     })
                     .then(() => {
                         alert("Equipo eliminado correctamente");
-                        window.location.href = "index.html"; // Redirigir a la página principal
+                        window.location.href = "index.html";
                     })
                     .catch(error => {
                         console.error("Error:", error);
@@ -59,10 +59,10 @@ function mostrarDetalles(equipo) {
     document.getElementById("fundacion").textContent = equipo.fundacion;
     document.getElementById("titulos").textContent = equipo.titulos;
 
-    // Mostrar el logo si está disponible
+    // Mostrar el logo
     if (equipo.logo) {
         document.getElementById("logo").src = equipo.logo;
     } else {
-        document.getElementById("logo").style.display = "none"; // Ocultar la imagen si no hay logo
+        document.getElementById("logo").style.display = "none";
     }
 }

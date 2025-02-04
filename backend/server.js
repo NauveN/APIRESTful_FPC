@@ -13,13 +13,15 @@ const dataPath = "./equipos.json";
 // Servir archivos estáticos desde la carpeta "frontend"
 app.use(express.static(path.join(__dirname, "../frontend")));
 
-// Obtener todos los equipos o filtrar por categoría y ciudad
+// Obtener todos los equipos o filtrar por categoría, ciudad, fundación y títulos
 app.get("/equipos", (req, res) => {
     let data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
-    let { categoria, ciudad } = req.query;
+    let { categoria, ciudad, fundacion, titulos } = req.query;
 
     if (categoria) data = data.filter(e => e.categoria === categoria);
     if (ciudad) data = data.filter(e => e.ciudad.toLowerCase().includes(ciudad.toLowerCase()));
+    if (fundacion) data = data.filter(e => e.fundacion === fundacion);
+    if (titulos) data = data.filter(e => e.titulos === parseInt(titulos));
 
     res.json(data);
 });
