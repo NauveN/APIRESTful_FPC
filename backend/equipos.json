@@ -10,16 +10,6 @@
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/America-de-caliu.png"
   },
   {
-    "id": 2,
-    "nombre": "Atlético Nacional",
-    "ciudad": "Medellín",
-    "categoria": "Primera División",
-    "titulos": 18,
-    "estadio": "Atanasio Girardot",
-    "fundacion": "1947",
-    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Atletico-nacional.png"
-  },
-  {
     "id": 3,
     "nombre": "Millonarios",
     "ciudad": "Bogotá",
@@ -238,15 +228,5 @@
     "estadio": "Metropolitano de Techo",
     "fundacion": "2003",
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/BOGOTA-FC.png"
-  },
-  {
-    "id": 25,
-    "nombre": "Real Cartagena",
-    "ciudad": "Cartagena",
-    "categoria": "Segunda División",
-    "titulos": 0,
-    "estadio": "Olímpico Jaime Morón León",
-    "fundacion": "1971",
-    "logo": "https://dimayor.com.co/wp-content/uploads/2024/07/REAL-CARTAGENA.png"
   }
 ]
