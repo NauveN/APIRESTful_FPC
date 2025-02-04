@@ -6,12 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
 function buscarEquipos() {
     const categoria = document.getElementById("categoria").value;
     const ciudad = document.getElementById("ciudad").value;
+    const fundacion = document.getElementById("fundacion").value;
+    const titulos = document.getElementById("titulos").value;
 
     // Construir la URL de búsqueda
     let url = `http://localhost:3000/equipos`;
-    if (categoria || ciudad) {
-        url += `?${categoria ? `categoria=${categoria}` : ''}${ciudad ? `&ciudad=${ciudad}` : ''}`;
-    }
+    const params = new URLSearchParams();
+    if (categoria) params.append("categoria", categoria);
+    if (ciudad) params.append("ciudad", ciudad);
+    if (fundacion) params.append("fundacion", fundacion);
+    if (titulos) params.append("titulos", titulos);
+    if (params.toString()) url += `?${params.toString()}`;
 
     // Hacer la solicitud al servidor
     fetch(url)
@@ -24,13 +29,13 @@ function buscarEquipos() {
         .then(data => mostrarEquipos(data))
         .catch(error => {
             console.error("Error:", error);
-            alert(error.message); // Mostrar un mensaje de error al usuario
+            alert(error.message);
         });
 }
 
 function mostrarEquipos(equipos) {
     const contenedorEquipos = document.getElementById("equipos");
-    contenedorEquipos.innerHTML = ""; // Limpiar el contenedor
+    contenedorEquipos.innerHTML = "";
 
     if (equipos.length === 0) {
         contenedorEquipos.innerHTML = "<p>No se encontraron equipos.</p>";
