@@ -1,34 +1,252 @@
 [
   {
-      "nombre": "Atlético Nacional",
-      "ciudad": "Medellín",
-      "categoria": "Primera División",
-      "titulos": 17,
-      "estadio": "Atanasio Girardot",
-      "fundacion": "1947"
+    "id": 1,
+    "nombre": "América de Cali",
+    "ciudad": "Cali",
+    "categoria": "Primera División",
+    "titulos": 15,
+    "estadio": "Pascual Guerrero",
+    "fundacion": "1927",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/America-de-caliu.png"
   },
   {
-      "nombre": "Millonarios",
-      "ciudad": "Bogotá",
-      "categoria": "Primera División",
-      "titulos": 16,
-      "estadio": "El Campín",
-      "fundacion": "1946"
+    "id": 2,
+    "nombre": "Atlético Nacional",
+    "ciudad": "Medellín",
+    "categoria": "Primera División",
+    "titulos": 18,
+    "estadio": "Atanasio Girardot",
+    "fundacion": "1947",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Atletico-nacional.png"
   },
   {
-      "nombre": "América de Cali",
-      "ciudad": "Cali",
-      "categoria": "Primera División",
-      "titulos": 15,
-      "estadio": "Pascual Guerrero",
-      "fundacion": "1927"
+    "id": 3,
+    "nombre": "Millonarios",
+    "ciudad": "Bogotá",
+    "categoria": "Primera División",
+    "titulos": 16,
+    "estadio": "Nemesio Camacho el Campín",
+    "fundacion": "1946",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/MILLONARIOS-F.C.png"
   },
   {
-      "nombre": "Unión Magdalena",
-      "ciudad": "Santa Marta",
-      "categoria": "Segunda División",
-      "titulos": 1,
-      "estadio": "Sierra Nevada",
-      "fundacion": "1953"
+    "id": 4,
+    "nombre": "Deportivo Cali",
+    "ciudad": "Cali",
+    "categoria": "Primera División",
+    "titulos": 10,
+    "estadio": "Estadio Deportivo Cali - Palmaseca",
+    "fundacion": "1912",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Deportivo-cali.png"
+  },
+  {
+    "id": 5,
+    "nombre": "Junior de Barranquilla",
+    "ciudad": "Barranquilla",
+    "categoria": "Primera División",
+    "titulos": 10,
+    "estadio": "Metropolitano Roberto Meléndez",
+    "fundacion": "1924",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/junior.png"
+  },
+  {
+    "id": 6,
+    "nombre": "Independiente Santa Fe",
+    "ciudad": "Bogotá",
+    "categoria": "Primera División",
+    "titulos": 9,
+    "estadio": "Nemesio Camacho el Campín",
+    "fundacion": "1941",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/SANTA-FE.png"
+  },
+  {
+    "id": 7,
+    "nombre": "Once Caldas",
+    "ciudad": "Manizales",
+    "categoria": "Primera División",
+    "titulos": 4,
+    "estadio": "Palogrande",
+    "fundacion": "1961",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/ONCE-CALDAS.png"
+  },
+  {
+    "id": 8,
+    "nombre": "Deportes Tolima",
+    "ciudad": "Ibagué",
+    "categoria": "Primera División",
+    "titulos": 3,
+    "estadio": "Manuel Murillo Toro",
+    "fundacion": "1954",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Deportes-tolima.png"
+  },
+  {
+    "id": 9,
+    "nombre": "La Equidad",
+    "ciudad": "Bogotá",
+    "categoria": "Primera División",
+    "titulos": 0,
+    "estadio": "Metropolitano de Techo",
+    "fundacion": "1982",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Equidad.png"
+  },
+  {
+    "id": 10,
+    "nombre": "Águilas Doradas",
+    "ciudad": "Rionegro",
+    "categoria": "Primera División",
+    "titulos": 0,
+    "estadio": "Alberto Grisales",
+    "fundacion": "2008",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/AGUILAS-DORADAS.png"
+  },
+  {
+    "id": 14,
+    "nombre": "Llaneros FC",
+    "ciudad": "Villavicencio",
+    "categoria": "Primera División",
+    "titulos": 0,
+    "estadio": "Manuel Calle Lombana",
+    "fundacion": "1912",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/07/LLANEROS-FC.png"
+  },
+  {
+    "id": 15,
+    "nombre": "Fortaleza CEIF",
+    "ciudad": "Bogotá",
+    "categoria": "Primera División",
+    "titulos": 0,
+    "estadio": "Metropolitano de Techo",
+    "fundacion": "2010",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/FORTALEZA-C.E.I.F.png"
+  },
+  {
+    "id": 7,
+    "nombre": "Atlético Bucaramanga",
+    "ciudad": "Bucaramanga",
+    "categoria": "Primera División",
+    "titulos": 1,
+    "estadio": "Alfonso López",
+    "fundacion": "1949",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/08/ab_estrella_001.png"
+  },
+  {
+    "id": 8,
+    "nombre": "Alianza FC",
+    "ciudad": "Valledupar",
+    "categoria": "Primera División",
+    "titulos": 0,
+    "estadio": "Armando Maestre Pavajeau",
+    "fundacion": "1990",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Alianza-fx.png"
+  },
+  {
+    "id": 10,
+    "nombre": "Envigado",
+    "ciudad": "Envigado",
+    "categoria": "Primera División",
+    "titulos": 0,
+    "estadio": "Polideportivo Sur",
+    "fundacion": "1989",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Envigado.png"
+  },
+  {
+    "id": 14,
+    "nombre": "Unión Magdalena",
+    "ciudad": "Santa Marta",
+    "categoria": "Primera División",
+    "titulos": 0,
+    "estadio": "Estadio Sierra Nevada",
+    "fundacion": "1953",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/UNION-MAGDALENA.png"
+  },
+  {
+    "id": 16,
+    "nombre": "Independiente Medellín",
+    "ciudad": "Medellín",
+    "categoria": "Primera División",
+    "titulos": 7,
+    "estadio": "Atanasio Girardot",
+    "fundacion": "1913",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Independiente-medellin.png"
+  },
+  {
+    "id": 17,
+    "nombre": "Deportivo Pasto",
+    "ciudad": "Pasto",
+    "categoria": "Primera División",
+    "titulos": 2,
+    "estadio": "Departamental Libertad",
+    "fundacion": "1949",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Depoprtivo-pasto.png"
+  },
+  {
+    "id": 18,
+    "nombre": "Pereira FC",
+    "ciudad": "Pereira",
+    "categoria": "Primera División",
+    "titulos": 1,
+    "estadio": "Hernán Ramírez Villegas",
+    "fundacion": "1944",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/DEPORTIVO-PEREIRA-FC-S.A.png"
+  },
+  {
+    "id": 19,
+    "nombre": "Boyacá Chicó",
+    "ciudad": "Tunja",
+    "categoria": "Primera División",
+    "titulos": 1,
+    "estadio": "La Independencia",
+    "fundacion": "2002",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Boyaca-chico.png"
+  },
+  {
+    "id": 11,
+    "nombre": "Cúcuta Deportivo",
+    "ciudad": "Cúcuta",
+    "categoria": "Primera División",
+    "titulos": 0,
+    "estadio": "General Santander",
+    "fundacion": "1924",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Cúcuta_Deportivo_logo.svg"
+  },
+  {
+    "id": 13,
+    "nombre": "Jaguares de Córdoba",
+    "ciudad": "Montería",
+    "categoria": "Primera División",
+    "titulos": 0,
+    "estadio": "Jaraguay",
+    "fundacion": "2012",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Jaguares_de_Córdoba_logo.svg"
+  },
+  {
+    "id": 11,
+    "nombre": "Patriotas FC",
+    "ciudad": "Tunja",
+    "categoria": "Segunda División",
+    "titulos": 0,
+    "estadio": "La Independencia",
+    "fundacion": "2003",
+    "logo": ""
+  },
+  {
+    "id": 12,
+    "nombre": "Bogotá FC",
+    "ciudad": "Bogotá",
+    "categoria": "Segunda División",
+    "titulos": 0,
+    "estadio": "Metropolitano de Techo",
+    "fundacion": "2003",
+    "logo": ""
+  },
+  {
+    "id": 13,
+    "nombre": "Real Cartagena",
+    "ciudad": "Cartagena",
+    "categoria": "Segunda División",
+    "titulos": 0,
+    "estadio": "Olímpico Jaime Morón León",
+    "fundacion": "1971",
+    "logo": ""
   }
 ]

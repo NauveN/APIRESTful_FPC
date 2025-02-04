@@ -1,46 +1,55 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Cargar los equipos al iniciar la página
     buscarEquipos();
 });
 
 function buscarEquipos() {
-    let categoria = document.getElementById("categoria").value;
-    let ciudad = document.getElementById("ciudad").value;
-    let url = "http://localhost:3000/equipos?";
+    const categoria = document.getElementById("categoria").value;
+    const ciudad = document.getElementById("ciudad").value;
 
-    if (categoria) url += `categoria=${encodeURIComponent(categoria)}&`;
-    if (ciudad) url += `ciudad=${encodeURIComponent(ciudad)}`;
+    // Construir la URL de búsqueda
+    let url = `http://localhost:3000/equipos`;
+    if (categoria || ciudad) {
+        url += `?${categoria ? `categoria=${categoria}` : ''}${ciudad ? `&ciudad=${ciudad}` : ''}`;
+    }
 
+    // Hacer la solicitud al servidor
     fetch(url)
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Error al cargar los equipos");
+            }
+            return response.json();
+        })
         .then(data => mostrarEquipos(data))
-        .catch(error => console.error("Error:", error));
+        .catch(error => {
+            console.error("Error:", error);
+            alert(error.message); // Mostrar un mensaje de error al usuario
+        });
 }
 
 function mostrarEquipos(equipos) {
-    let container = document.getElementById("equipos");
-    container.innerHTML = "";
+    const contenedorEquipos = document.getElementById("equipos");
+    contenedorEquipos.innerHTML = ""; // Limpiar el contenedor
 
     if (equipos.length === 0) {
-        container.innerHTML = "<p class='text-danger'>No se encontraron equipos.</p>";
+        contenedorEquipos.innerHTML = "<p>No se encontraron equipos.</p>";
         return;
     }
 
-    equipos.forEach(e => {
-        let card = `
-            <div class="col-md-4 mb-4">
-                <div class="card shadow">
-                    <div class="card-body text-center">
-                        <img src="https://via.placeholder.com/80" class="team-logo mb-3" alt="Logo">
-                        <h5 class="card-title">${e.nombre}</h5>
-                        <p class="card-text"><strong>Ciudad:</strong> ${e.ciudad}</p>
-                        <p class="card-text"><strong>Categoría:</strong> ${e.categoria}</p>
-                        <p class="card-text"><strong>Títulos:</strong> ${e.titulos}</p>
-                        <p class="card-text"><strong>Estadio:</strong> ${e.estadio}</p>
-                        <p class="card-text"><strong>Fundación:</strong> ${e.fundacion}</p>
+    // Generar la lista de equipos
+    equipos.forEach(equipo => {
+        const card = `
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="${equipo.logo}" class="card-img-top" alt="${equipo.nombre}" style="max-height: 150px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title">${equipo.nombre}</h5>
+                        <a href="equipo.html?id=${equipo.id}" class="btn btn-primary">Ver detalles</a>
                     </div>
                 </div>
             </div>
         `;
-        container.innerHTML += card;
+        contenedorEquipos.innerHTML += card;
     });
 }
