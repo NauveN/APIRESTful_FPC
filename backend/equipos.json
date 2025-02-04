@@ -100,7 +100,7 @@
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/AGUILAS-DORADAS.png"
   },
   {
-    "id": 14,
+    "id": 11,
     "nombre": "Llaneros FC",
     "ciudad": "Villavicencio",
     "categoria": "Primera División",
@@ -110,7 +110,7 @@
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/07/LLANEROS-FC.png"
   },
   {
-    "id": 15,
+    "id": 12,
     "nombre": "Fortaleza CEIF",
     "ciudad": "Bogotá",
     "categoria": "Primera División",
@@ -120,7 +120,7 @@
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/FORTALEZA-C.E.I.F.png"
   },
   {
-    "id": 7,
+    "id": 13,
     "nombre": "Atlético Bucaramanga",
     "ciudad": "Bucaramanga",
     "categoria": "Primera División",
@@ -130,7 +130,7 @@
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/08/ab_estrella_001.png"
   },
   {
-    "id": 8,
+    "id": 14,
     "nombre": "Alianza FC",
     "ciudad": "Valledupar",
     "categoria": "Primera División",
@@ -140,7 +140,7 @@
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Alianza-fx.png"
   },
   {
-    "id": 10,
+    "id": 15,
     "nombre": "Envigado",
     "ciudad": "Envigado",
     "categoria": "Primera División",
@@ -150,7 +150,7 @@
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Envigado.png"
   },
   {
-    "id": 14,
+    "id": 16,
     "nombre": "Unión Magdalena",
     "ciudad": "Santa Marta",
     "categoria": "Primera División",
@@ -160,7 +160,7 @@
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/UNION-MAGDALENA.png"
   },
   {
-    "id": 16,
+    "id": 17,
     "nombre": "Independiente Medellín",
     "ciudad": "Medellín",
     "categoria": "Primera División",
@@ -170,7 +170,7 @@
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Independiente-medellin.png"
   },
   {
-    "id": 17,
+    "id": 18,
     "nombre": "Deportivo Pasto",
     "ciudad": "Pasto",
     "categoria": "Primera División",
@@ -180,7 +180,7 @@
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Depoprtivo-pasto.png"
   },
   {
-    "id": 18,
+    "id": 19,
     "nombre": "Pereira FC",
     "ciudad": "Pereira",
     "categoria": "Primera División",
@@ -190,7 +190,7 @@
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/DEPORTIVO-PEREIRA-FC-S.A.png"
   },
   {
-    "id": 19,
+    "id": 20,
     "nombre": "Boyacá Chicó",
     "ciudad": "Tunja",
     "categoria": "Primera División",
@@ -200,53 +200,53 @@
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Boyaca-chico.png"
   },
   {
-    "id": 11,
+    "id": 21,
     "nombre": "Cúcuta Deportivo",
     "ciudad": "Cúcuta",
-    "categoria": "Primera División",
+    "categoria": "Segunda División",
     "titulos": 0,
     "estadio": "General Santander",
     "fundacion": "1924",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Cúcuta_Deportivo_logo.svg"
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/CUCUTA-DEPORTIVO.png"
   },
   {
-    "id": 13,
+    "id": 22,
     "nombre": "Jaguares de Córdoba",
     "ciudad": "Montería",
-    "categoria": "Primera División",
+    "categoria": "Segunda División",
     "titulos": 0,
     "estadio": "Jaraguay",
     "fundacion": "2012",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Jaguares_de_Córdoba_logo.svg"
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/JAGUARES-F.C.png"
   },
   {
-    "id": 11,
+    "id": 23,
     "nombre": "Patriotas FC",
     "ciudad": "Tunja",
     "categoria": "Segunda División",
     "titulos": 0,
     "estadio": "La Independencia",
     "fundacion": "2003",
-    "logo": ""
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/PatriPATRIOTAS-BOYACA-S.A.otas_.png"
   },
   {
-    "id": 12,
+    "id": 24,
     "nombre": "Bogotá FC",
     "ciudad": "Bogotá",
     "categoria": "Segunda División",
     "titulos": 0,
     "estadio": "Metropolitano de Techo",
     "fundacion": "2003",
-    "logo": ""
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/BOGOTA-FC.png"
   },
   {
-    "id": 13,
+    "id": 25,
     "nombre": "Real Cartagena",
     "ciudad": "Cartagena",
     "categoria": "Segunda División",
     "titulos": 0,
     "estadio": "Olímpico Jaime Morón León",
     "fundacion": "1971",
-    "logo": ""
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/07/REAL-CARTAGENA.png"
   }
 ]

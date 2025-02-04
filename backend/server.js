@@ -13,13 +13,15 @@ const dataPath = "./equipos.json";
 // Servir archivos estáticos desde la carpeta "frontend"
 app.use(express.static(path.join(__dirname, "../frontend")));
 
-// Obtener todos los equipos o filtrar por categoría y ciudad
+// Obtener todos los equipos o filtrar por categoría, ciudad, fundación y títulos
 app.get("/equipos", (req, res) => {
     let data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
-    let { categoria, ciudad } = req.query;
+    let { categoria, ciudad, fundacion, titulos } = req.query;
 
     if (categoria) data = data.filter(e => e.categoria === categoria);
     if (ciudad) data = data.filter(e => e.ciudad.toLowerCase().includes(ciudad.toLowerCase()));
+    if (fundacion) data = data.filter(e => e.fundacion === fundacion);
+    if (titulos) data = data.filter(e => e.titulos === parseInt(titulos));
 
     res.json(data);
 });
@@ -29,6 +31,16 @@ app.get("/equipo/:id", (req, res) => {
     let data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
     let equipo = data.find(e => e.id === parseInt(req.params.id));
     equipo ? res.json(equipo) : res.status(404).json({ error: "Equipo no encontrado" });
+});
+
+// Crear un nuevo equipo
+app.post("/equipos", (req, res) => {
+    let data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
+    const nuevoEquipo = req.body;
+    data.push(nuevoEquipo);
+
+    fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
+    res.status(201).json(nuevoEquipo);
 });
 
 // Editar un equipo existente
