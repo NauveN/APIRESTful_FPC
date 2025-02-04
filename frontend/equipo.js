@@ -54,6 +54,7 @@ function mostrarDetalles(equipo) {
     // Mostrar los datos del equipo en la página
     document.getElementById("nombre").textContent = equipo.nombre;
     document.getElementById("ciudad").textContent = equipo.ciudad;
+    document.getElementById("categoria").textContent = equipo.categoria;
     document.getElementById("estadio").textContent = equipo.estadio;
     document.getElementById("fundacion").textContent = equipo.fundacion;
     document.getElementById("titulos").textContent = equipo.titulos;
