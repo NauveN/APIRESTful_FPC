@@ -248,5 +248,25 @@
     "estadio": "Olímpico Jaime Morón León",
     "fundacion": "1971",
     "logo": ""
+  },
+  {
+    "id": 1738643333870,
+    "nombre": "tapitas Futbol Club",
+    "ciudad": "Bogotá",
+    "categoria": "Primera División",
+    "titulos": 5,
+    "estadio": "Campín",
+    "fundacion": "2002",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/America-de-caliu.png"
+  },
+  {
+    "id": 1738643721526,
+    "nombre": "tapitas FC 2",
+    "ciudad": "Bogotá",
+    "categoria": "Primera División",
+    "titulos": 2,
+    "estadio": "Campín",
+    "fundacion": "2002",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/America-de-caliu.png"
   }
 ]
