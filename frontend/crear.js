@@ -30,6 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(() => {
+            window.location.href = "index.html"; // Redirige sin mensaje de confirmación
+        })
+        .then(() => {
             alert("Equipo creado correctamente");
             window.location.href = "index.html";
         })

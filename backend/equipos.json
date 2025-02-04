@@ -228,5 +228,25 @@
     "estadio": "Metropolitano de Techo",
     "fundacion": "2003",
     "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/BOGOTA-FC.png"
+  },
+  {
+    "id": 1738675809325,
+    "nombre": "cali",
+    "ciudad": "cali",
+    "categoria": "Primera División",
+    "titulos": 0,
+    "estadio": "palmaseca",
+    "fundacion": "1921",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Deportivo-cali.png"
+  },
+  {
+    "id": 1738675945750,
+    "nombre": "f",
+    "ciudad": "Cali",
+    "categoria": "Primera División",
+    "titulos": 0,
+    "estadio": "palmaseca",
+    "fundacion": "1921",
+    "logo": "https://dimayor.com.co/wp-content/uploads/2024/06/Deportivo-cali.png"
   }
 ]
