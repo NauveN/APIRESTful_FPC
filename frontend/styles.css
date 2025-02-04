@@ -1,14 +1,15 @@
 body {
-    background-color: #f8f9fa;
+    background-color: #f4f6f9;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
 }
-
 .container {
-    margin-top: 30px;
-}
-
-h1 {
-    color: #dc3545;
-    font-weight: bold;
+    max-width: 800px;
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .table {
@@ -40,4 +41,32 @@ th {
     height: 80px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+.form-control {
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+    transition: border 0.3s ease;
+}
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
 }

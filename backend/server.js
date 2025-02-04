@@ -31,6 +31,16 @@ app.get("/equipo/:id", (req, res) => {
     equipo ? res.json(equipo) : res.status(404).json({ error: "Equipo no encontrado" });
 });
 
+// Crear un nuevo equipo
+app.post("/equipos", (req, res) => {
+    let data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
+    const nuevoEquipo = req.body;
+    data.push(nuevoEquipo);
+
+    fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
+    res.status(201).json(nuevoEquipo);
+});
+
 // Editar un equipo existente
 app.put("/equipo/:id", (req, res) => {
     let data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
