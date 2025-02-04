@@ -1,3 +1,6 @@
+// Autores: Felipe González, Miguel Cárdenas
+// Universidad Distrital Francisco José de Caldas
+
 document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");

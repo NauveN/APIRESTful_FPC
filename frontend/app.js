@@ -1,3 +1,6 @@
+// Autores: Felipe González, Miguel Cárdenas
+// Universidad Distrital Francisco José de Caldas
+
 document.addEventListener("DOMContentLoaded", () => {
     // Cargar los equipos al iniciar la página
     buscarEquipos();

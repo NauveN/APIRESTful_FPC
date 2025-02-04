@@ -1,3 +1,6 @@
+// Autores: Felipe González, Miguel Cárdenas
+// Universidad Distrital Francisco José de Caldas
+
 document.addEventListener("DOMContentLoaded", () => {
     // Obtener el ID del equipo
     const params = new URLSearchParams(window.location.search);

@@ -1,3 +1,6 @@
+// Autores: Felipe González, Miguel Cárdenas
+// Universidad Distrital Francisco José de Caldas
+
 const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
